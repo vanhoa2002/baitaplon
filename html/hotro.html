@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        #wrapper {
+
+            min-height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 3rem;
+            color: greenyellow;
+        }
+        a.button{
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f5f5f5;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.25s ease;
+        }
+        a.button.messenger{
+            background: #0099FF;
+            color: #fff;
+        }
+        a.button.messenger:hover{
+            background: #097ac5;
+        }
+        a.button.youtube{
+            background: #CD201F;
+            color: #fff;
+        }
+        a.button.youtube:hover{
+            background: #961919;
+        }
+        .card-img-top{
+            height: 190px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btnDK").click(function() {
+                $("#myModal").modal();
+            })
+
+        });
+    </script>
+    <title>Hỗ Trợ</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 px-2">
+    <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logoxe.png"></a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/index.html">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/ProductDetails.html">SẢN PHẨM</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+            TÀI KHOẢN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../html/blog.html">THÔNG TIN</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../html/sitemap.html">SITEMAP</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+        </li>
+      </ul>
+      <form class="d-flex mr-5">
+        <input class="form-control mr-2 bg-dark" type="search" placeholder="Bạn muốn tìm kiếm đồ gì?" style="width: 300px; outline: none;">
+        <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <form class="d-flex" action="../html/signup.html">
+        <a href="../html/signup.html"><button class="btn btn-dark  ml-5" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+        
+    </form>
+    </div>
+  </nav>
+      <div class="video-background-holder">
+        <div class="video-background-overlay"></div>
+        <video  autoplay="autoplay" muted="muted" loop="loop" id ="myVideo">
+              <source src="../assets/video/BMW-S1000RR.mp4" type="video/mp4">
+          </video>
+        <div class="video-background-content container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <div id="wrapper" class="container-fluid">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-md-3">
+                            <div class="card text-dark" >
+                                <img src="../assets/img/hotronganhang.jpg" class="card-img-top border-bottom"  >
+                                <div class="card-body">
+                                  <h5 class="card-title">Hỗ trợ tài khoản</h5>
+                                  <p class="card-text"><i>
+                                    Hỗ trợ xử lý các vấn đề liên quan tới tài khoản.
+                                  </i>
+                                </p>    
+                                  <a href="#" class="btn btn-primary text-uppercase">Nhấn vào đây</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-dark" >
+                                <img src="../assets/img/thanhtoan.png" class="card-img-top border-bottom"  >
+                                <div class="card-body">
+                                  <h5 class="card-title">Hỗ trợ thanh toán</h5>
+                                  <p class="card-text"><i>
+                                    Hỗ trợ xử lý các vấn đề liên quan tới thanh toán.
+                                  </i>
+                                </p>    
+                                  <a href="#" class="btn btn-primary text-uppercase">Nhấn vào đây</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-dark" >
+                                <img src="../assets/img/hoantra.png" class="card-img-top border-bottom"  >
+                                <div class="card-body">
+                                  <h5 class="card-title">Hỗ trợ đổi trả</h5>
+                                  <p class="card-text"><i>
+                                    Hỗ trợ xử lý các vấn đề liên quan tới đổi trả.
+                                  </i>
+                                </p>    
+                                  <a href="#" class="btn btn-primary text-uppercase">Nhấn vào đây</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-dark" >
+                                <img src="../assets/img/sanpham.png" class="card-img-top border-bottom"  >
+                                <div class="card-body">
+                                  <h5 class="card-title">Hỗ trợ sản phẩm</h5>
+                                  <p class="card-text"><i>
+                                    Hỗ trợ xử lý các vấn đề liên quan tới giá sản phẩm.
+                                  </i>
+                                </p>    
+                                  <a href="#" class="btn btn-primary text-uppercase">Nhấn vào đây</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                <div class="list-button">
+                    <a href="#" class="button messenger mr-3" id="btnDK">
+                        <span class="button-icon">
+                            <i class="fa fa-facebook" ></i>
+                        </span>
+                        <span class="button-text">
+                            Cần tư vấn trực tiếp? Nhấn vào đây.
+                        </span>
+                    </a>
+                    <a href="#" class="button youtube ml-2">
+                        <span class="button-icon">
+                            <i class="fa fa-youtube-play"></i>
+                        </span>
+                        <span class="button-text">
+                            Kênh video của chúng tôi
+                        </span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <footer class=" bg-dark text-white text-center">
+        <div class="container px-4 pt-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-uppercase">CẢM ƠN BẠN</h5>
+      
+              <p style="text-align: justify;">
+                Đây là một website bán xe, hy vọng khách hàng có những giây phút vui vẻ và thỏa mãn khi mua sắm tại đây!
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-uppercase">Liên kết</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="../html/index.html" >TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href="../html/ProductDetails.html" >SẢN PHẨM</a>
+                  
+                </li>
+                <li>
+                    <a href="../html/hotro.html" >HỖ TRỢ</a>
+                </li>
+                <li>
+                    <a href="../html/about_us.html" >VỀ CHÚNG TÔI</a>
+                </li>
+                <li class="icon">
+                    <a href="#"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#"> <i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+                <img src="../assets/img/logoSaleNoti.png" height="100px" style="margin-top:20px;">
+                
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #009933;">
+          © BẢN QUYỀN THUỘC VỀ VANHOA VÀ VIETHUNG
+          
+        </div>
+      </footer>
+    <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog" style="margin-top: 10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" style="margin-top:10px;">
+                        <label for="Name" class="control-label col-xs-3 ">Họ tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                        <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="DC" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbDc">*</span>
+                        </div>
+                        <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="SDT" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbSDT">*</span>
+                        </div>
+                        <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" id="ADD" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbAdd">*</span>
+                        </div>
+                        <button class="btn btn-success btn-group-justified" id="Save" type="button" style="color: white; background-color: green; width: 100%;">
+                        Lưu
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+</body>
+</html>

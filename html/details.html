@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../Js/jquery-3.6.0.min.js"></script>
+    <script src="../Js/bootstrap.min.js"></script>
+    <title>Chi tiết sản phẩm</title>
+  </head>
+    <body>
+      <div class="pd-wrap p-0">
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 px-2">
+            <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logoxe.png"></a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/index.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/ProductDetails.html">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                    TÀI KHOẢN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../html/blog.html">THÔNG TIN</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../html/sitemap.html">SITEMAP</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+                </li>
+              </ul>
+              <form class="d-flex mr-5">
+                <input class="form-control mr-2 bg-dark" type="search" placeholder="Bạn muốn tìm kiếm đồ gì?" style="width: 300px; outline: none;">
+                <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <form class="d-flex" action="">
+                <button type="button" id ="cart" class="fa fa-shopping-basket btn btn-outline-success m-0 p-2"> GIỎ HÀNG
+                    <span id="clicks"></span>
+                </button>
+                      
+              </form>
+              <form class="d-flex" action="../html/signup.html">
+                  <a href="../html/signup.html"><button class="btn btn-dark  ml-3" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+                  
+              </form>
+            </div>
+          </nav>
+          <div class="heading-section px-3">
+            <h2 class="text-center p-0 mt-3 mb-0">Chi tiết sản phẩm</h2>
+            <h6 class="p-1 border-bottom"><a href="index.html">Trang Chủ </a> / <a href="ProductDetails.html">Sản Phẩm</a>/ <a href="ProductDetails.html" id="productname">Mô hình Monkey D. Luffy</a></h6>
+        </div>
+        
+      <div class="container">
+            <div class="row">
+              <div class="col-md-5 p-0">
+                <div id="slider" class="owl-carousel product-slider">
+                <div class="item" id="item-product">
+              </div>
+               </div>
+            <div id="thumb" class="owl-carousel product-thumb">
+              <div class="item">
+              </div>
+            </div>
+              </div> 
+              <div class="col-md-6">
+                <div class="product-dtl">
+                  <div class="product-info">
+                    <div class="product-name" id ="name-detail" >BMW1000RR</div>
+                    <div class="reviews-counter">
+                  <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5" checked />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" checked />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" checked />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                  <span>3 Reviews</span>
+                </div>
+                    <div class="product-price-discount"><span id="price">$555.0000.000VNĐ</span><span class="line-through">$599.000.000VNĐ</span></div>
+                  </div>
+                  <p id = "descriptiontitle">BMW1000RR trang bị thêm nhiều tính năng điện tử, điều khiển khởi động, tất cả đều có thể kích hoạt từ các nút điều khiển trên ghi đông.
+                     Chiếc xe cũng được trang bị màu sắc riêng và mặt đồng hồ đo tốc độ HP4 đặc biệt.</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="size">Màu sắc</label>
+                  <select id="size" name="size" class="form-control">
+                    <option>Đỏ</option>
+                    <option>Đỏ đen</option>
+                    <option>Đen</option>
+                    <option>Vàng Đen</option>
+                  </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="size">Giấy dán</label>
+                  <select id="size" name="size" class="form-control">
+                    <option>Có</option>
+                    <option>Không</option>
+                    
+                  </select>
+                    </div>
+                  <div class="product-count">
+                    <label for="size">Số lượng</label>
+                    <form action="#" class="display-flex">
+                    <div class="qtyminus">-</div>
+                    <input type="text" name="quantity" value="1" class="qty">
+                    <div class="qtyplus">+</div>
+                </form>
+                <a href="#" class="round-black-btn btn-primary">Thêm vào giỏ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-info-tabs">
+              <ul class="nav nav-tabs col-md-12" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" >Miêu tả</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review">Bình luận (5)</a>
+              </li>
+          </ul>
+          <div class="row">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                Vào năm 2017, BMW tung ra một biến thể dành riêng cho đường đua, không hợp pháp trên đường phố, HP4 Race đã được thêm vào, được sản xuất với số lượng giới hạn 750 chiếc.
+              </div>
+              <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab" >
+                <div class="review-heading">Bình luận</div>
+                <p class="mb-20">Hiện tại không có bình luận.</p>
+                <form class="review-form">
+                    <div class="form-group">
+                      <label>Nhận xét của bạn</label>
+                      <div class="reviews-counter">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                  </div>
+                </div>
+                    <div class="form-group">
+                      <label>Lời nhắn của bạn</label>
+                      <textarea class="form-control" rows="10"></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="" class="form-control" placeholder="Họ và Tên">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="" class="form-control" placeholder="Địa chỉ Email">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="round-black-btn">Xác nhận</button>
+                  </form>
+              </div>
+          </div>
+          </div>
+          
+        </div>
+    </div>
+
+    </div>
+      </div>
+      <footer class="mt-5 bg-dark text-white text-center">
+        <div class="container px-4 pt-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-uppercase">CẢM ƠN BẠN </h5>
+      
+              <p style="text-align: justify;">
+                Đây là một website bán xe, hy vọng khách hàng có những giây phút vui vẻ và thỏa mãn khi mua sắm tại đây!
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-uppercase">Liên kết</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="../html/index.html" >TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href="../html/ProductDetails.html" >SẢN PHẨM</a>
+                  
+                </li>
+                <li>
+                    <a href="../html/hotro.html" >HỖ TRỢ</a>
+                </li>
+                <li>
+                    <a href="../html/about_us.html" >VỀ CHÚNG TÔI</a>
+                </li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://www.facebook.com/"> <i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+                <img src="../assets/img/logoSaleNoti.png" height="100px" style="margin-top:20px;">
+                
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #009933;">
+          © BẢN QUYỀN THUỘC VỀ VANHOA VÀ VIETHUNG
+          
+        </div>
+      </footer>
+      <script src="../js/ProductToProductDetails.js"></script>
+   </body>
+  </html>
+

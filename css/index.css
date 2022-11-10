@@ -1,0 +1,125 @@
+.gif-header{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+::placeholder{
+    color:#fff;
+}
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 55px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+  }
+
+.content  h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: bolder;
+	text-align: center;
+	margin: 40px 0 20px 0;
+
+}
+.content hr{
+    width: 10%;
+    background-color: #7ac400;
+    min-height: 2px;
+}
+.content .review p{
+    padding: 10px 260px;
+    text-align: justify;
+} 
+.carousel {
+	margin: 20px auto;
+	padding: 0 70px;
+}
+.carousel-indicators{
+    margin-top: 150px;
+}
+.carousel .thumb-wrapper {
+	padding: 25px 15px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: center;
+    border: 1px solid #ccc;
+}
+.carousel .item h4{
+    padding: 5px 0;
+    font-size: 20px;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+    border-radius: 15px;
+}
+
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 50px !important;
+    height: 30px;
+    margin: 230px 10px 0 10px;
+    border-radius: 15px;
+}
+.video-new img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    /* z-index: 0; */
+}
+.video-new .video{
+    margin-top: 150px;
+}
+.video-new i{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    font-size: 60px;
+    color:#ccc;
+    opacity: 0.7;
+    
+}
+.video-new  :hover > i{
+    opacity: 1;
+}
+footer .icon{
+    font-size: 30px;
+}
+footer .icon i{
+    color:#ccc;
+}

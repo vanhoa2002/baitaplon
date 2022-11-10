@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style-login.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <title>Login</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar bg-dark p-0 px-2">
+    <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logoxe.png"></a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/index.html">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/ProductDetails.html">SẢN PHẨM</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+            TÀI KHOẢN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../html/blog.html">THÔNG TIN</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../html/sitemap.html">SITEMAP</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control mr-2 bg-dark" type="search" placeholder="Bạn muốn tìm kiếm đồ gì?" style="width: 300px; outline: none;">
+        <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
+      </form>
+      <form class="d-flex" action="../html/signup.html">
+          <a href=""><button class="btn btn-dark  ml-3" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+          
+      </form>
+    </div>
+  </nav>
+    <div class="container-fluid p-0 body">
+      <div class="row m-0 p-0">
+        <div class="col-md-7  m-0 p-0">
+          <div id="text-in-img" class="text-in-img">
+            <h2 class ="hbgleft" id="left">Đăng ký tài khoản để mua sắm ngay hôm nay nhé!</h2>
+            <button type="button" class="btn btn-success" id ="btn-register" > ĐĂNG KÝ </button>
+            
+        </div>
+        <dvi class="text-in-img">
+          <h2 class="hbgright" id="right">Bạn đã có tài khoản? Đăng nhập tại đây!</h2>
+          <button type="button" class="btn btn-success" id ="btn-login"> ĐĂNG NHẬP</button>
+        </dvi>
+          <img src="../assets/img/blog.jpg" alt="" srcset="" class="img-register" >
+          
+
+        </div>
+        <div class="col-md-5 m-0 p-0">
+          <div class="container register" id="register">
+            <h3 class="text-center mb-4">ĐĂNG KÝ</h3>
+            <div class="form  d-flex justify-content-center">
+              <form action="#">
+              <input type="text" name="username" id="username-register" class="login" placeholder="Tên đăng nhập" required><br>
+              <span class="check text-danger" id="checkname" >*</span>
+              <br>
+              <input type="password" name="passw" id="passw-register" class="login" placeholder="Mật khẩu" required><br>
+              <span class="check text-danger" id="checkpass" >*</span>
+              <br>
+              <input type="text" name="email" id="email" class="login" placeholder="Email" required><br>
+              <span class="check text-danger" id="checkmail" >*</span>
+              <br>
+              <input type="text" onfocus="(this.type='date')" id="date" class="login" placeholder="Sinh nhật" required><br>
+              <span class="check text-danger"  id="checkdate">*</span>
+              <br>
+              <input type="checkbox" name="remember" id="dongy" required>
+              <label for="remember">Chấp nhận điều khoản</label>
+              <button type="submit" class="btn btn-primary button">ĐĂNG KÝ</button>
+            </form>
+            </div>
+          </div>
+          <div class="container login" id="login">
+            <h3 class="text-center mb-4">ĐĂNG NHẬP</h3>
+            <div class="form  d-flex justify-content-center">
+              <form action="#">
+              <input type="text" name="username" id="username" class="login" placeholder="Tên đăng nhập" required><br>
+              <input type="password" name="passw" id="passw" class="login" placeholder="Mật khẩu" required><br>
+              <input type="checkbox" name="remember" id="remember">
+              <label for="remember">Ghi nhớ mật khẩu</label>
+              <button type="submit" class="btn btn-primary button">ĐĂNG NHẬP</button>
+            </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class=" bg-dark text-white text-center">
+      <div class="container px-4 pt-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-uppercase">CẢM ƠN BẠN</h5>
+    
+            <p style="text-align: justify;">
+              Đây là một website bán xe, hy vọng khách hàng có những giây phút vui vẻ và thỏa mãn khi mua sắm tại đây!
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="text-uppercase">Liên kết</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="../html/index.html" >TRANG CHỦ</a>
+              </li>
+              <li>
+                  <a href="../html/ProductDetails.html" >SẢN PHẨM</a>
+                
+              </li>
+              <li>
+                  <a href="../html/hotro.html" >HỖ TRỢ</a>
+              </li>
+              <li>
+                  <a href="../html/about_us.html" >VỀ CHÚNG TÔI</a>
+              </li>
+              <li class="icon">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+              <img src="../assets/img/logoSaleNoti.png" height="100px" style="margin-top:20px;">
+              
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: #009933;">
+        © BẢN QUYỀN THUỘC VỀ VANHOA VÀ VIETHUNG
+        
+      </div>
+    </footer>
+      <script>  
+        var x = document.getElementById('register')
+        var log = document.getElementById('login');
+        var button_register = document.getElementById('btn-register')
+        var button_login = document.getElementById("btn-login")
+        var left = document.getElementById("left");
+        var right = document.getElementById("right");
+        
+        $(document).ready(function(){
+          $(button_register).click(function(){
+            log.style.display="none";
+            x.style.display = "block";
+            left.style.display="none";
+            button_register.style.display = "none";
+            right.style.display="block";
+            button_login.style.display="block";
+          })
+          $(button_login).click(function(){
+            x.style.display = "none";
+            log.style.display="block";
+            button_register.style.display = "block";
+            left.style.display="block";
+            right.style.display="none";
+            button_login.style.display="none";
+          })
+          function kiemtrausername(){
+          let maukt =/^[A-Za-z0-9]{6,20}$/
+          var value = $("#username-register").val();
+          if(value==""){
+              checkname.innerText = "Không được để trống";
+              return false;
+          }
+          else{
+              if(maukt.test(value)==true)
+              {
+                  checkname.innerHTML = "&#10004;";
+                  return true;
+              }
+              else{
+                  checkname.innerText = "Chỉ bao gồm số và chữ, không sử dụng các kí tự đặc biệt";
+                  return false;
+              }
+          }
+          }
+          $("#username-register").blur(kiemtrausername);
+          function kiemtraupass(){
+          let maukt =/^[A-Za-z0-9]{6,20}$/
+          var value = $("#passw-register").val();
+          if(value==""){
+              checkpass.innerText = "Không được để trống";
+              return false;
+          }
+          else{
+              if(maukt.test(value)==true)
+              {
+                  checkpass.innerHTML = "&#10004;";
+                  return true;
+              }
+              else{
+                  checkpass.innerText = "Chỉ bao gồm số và chữ, không sử dụng các kí tự đặc biệt";
+                  return false;
+              }
+          }
+          }
+          $("#passw-register").blur(kiemtraupass);
+          function kiemtrauemail(){
+          let maukt =/^[A-Za-z0-9_.]{6,32}@([a-zA-Z0-9]{2,12})(.[a-zA-Z]{2,12})+$/
+          var value = $("#email").val();
+          if(value==""){
+              checkmail.innerText = "Không được để trống";
+              return false;
+          }
+          else{
+              if(maukt.test(value)==true)
+              {
+                  checkmail.innerHTML = "&#10004;";
+                  return true;
+              }
+              else{
+                  checkmail.innerText = "Chỉ bao gồm số và chữ, không sử dụng các kí tự đặc biệt";
+                  return false;
+              }
+          }
+          }
+          $("#email").blur(kiemtrauemail);
+          function kiemtrasinhnhat(){
+          var today = new Date();
+          var value = new Date($("#date").val());
+          value.setDate(value.getFullYear())
+          today.setDate(today.getFullYear())
+          if(value=="Invalid Date"){
+              checkmail.innerText = "Không được để trống";
+              return false;
+          }
+          else{
+              if(value < today)
+              {
+                  checkmail.innerHTML = "&#10004;";
+                  return true;
+              }
+              else{
+                  checkmail.innerText = "Năm sinh không được quá năm hiện tại";
+                  return false;
+              }
+          }
+          }
+          $("#date").blur(kiemtrasinhnhat);
+          
+        })
+        
+    </script>
+</body>
+</html>

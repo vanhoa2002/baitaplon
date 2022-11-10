@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style-content.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 px-2">
+            <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logoxe.png"></a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/index.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/ProductDetails.html">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                    TÀI KHOẢN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../html/blog.html">THÔNG TIN</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../html/sitemap.html">SITEMAP</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+                </li>
+              </ul>
+              <form class="d-flex mr-5">
+                <input class="form-control mr-2 bg-dark" type="search" placeholder="Bạn muốn tìm kiếm loại xe nào?" style="width: 300px; outline: none;">
+                <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <form class="d-flex" action="">
+                  <button type="button" id ="cart" class="fa fa-shopping-basket btn btn-outline-success m-0 p-2"> GIỎ HÀNG
+                      <span id="clicks"></span>
+                  </button>
+                        
+                </form>
+                <form class="d-flex" action="../html/signup.html">
+                    <a href="../html/signup.html"><button class="btn btn-dark  ml-3" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+                    
+                </form>
+            </div>
+          </nav>
+          <div class="header">
+            <div class="col-md-12 p-0">
+                <img src="../assets/img/header.jpg" alt="" srcset="" class="gif-header"> 
+            </div>
+            
+        </div>
+        <div class="content_product">
+            
+            <section id="sidebar">
+                <h6 class="p-1 border-bottom"><a href="index.html">Trang Chủ </a> / <a href="ProductDetails.html">Sản Phẩm</a></h6>
+                <div>
+                    <h6>Giá Xe</h6>
+                    <hr>
+                    <form class="ml-md-2">
+                        <div class="form-inline p-sm-2 my-1"> <input type="radio" name="money" id="1_2"> <label for="1_2" class="pl-1">1.000.000đ - 5.000.000đ</label> </div>
+                        <div class="form-inline p-sm-2 my-1"> <input type="radio" name="money" id="2_3"> <label for="2_3" class="pl-1">5.000.000đ - 10.000.000đ</label> </div>
+                        <div class="form-inline p-md-2 my-1"> <input type="radio" name="money" id="3_"> <label for="3_" class="pl-1">> 10.000.000đ</label> </div>
+                    </form>
+                </div>
+                <div>
+                    <h6>Loại</h6>
+                    <hr>
+                    <form class="ml-md-2">
+                        <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="scalef"> <label for="scalef" class="pl-1 pt-sm-0 pt-1">Côn Tay</label> </div>
+                        <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="minif"> <label for="minif" class="pl-1 pt-sm-0 pt-1">MoTo</label> </div>
+                        <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="actionf"> <label for="actionf" class="pl-1 pt-sm-0 pt-1">Tay Ga </label> </div>
+                        <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="actionf"> <label for="actionf" class="pl-1 pt-sm-0 pt-1">Số </label> </div>
+                    </form>
+                </div>
+            </section>
+            <section id="products">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/BMW1.png" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>BMW1000RR</h4>
+                                                <p hidden class="description-title">BMW1000RR trang bị thêm nhiều tính năng điện tử, điều khiển khởi động, tất cả đều có thể kích hoạt từ các nút điều khiển trên ghi đông. Chiếc xe cũng được trang bị màu sắc riêng và mặt đồng hồ đo tốc độ HP4 đặc biệt. </p>			
+                                                <p hidden class="description">Vào năm 2017, BMW tung ra một biến thể dành riêng cho đường đua, không hợp pháp trên đường phố, HP4 Race đã được thêm vào, được sản xuất với số lượng giới hạn 750 chiếc.</p>						
+                                                <p class="item-price"><strike>599.000.000</strike> <b>555.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/BMW2.jpg" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>BMW G310R</h4>
+                                                <p hidden class="description-title">G310R là sản phẩm hợp tác giữa BMW Motorrad và TVS Motor của Ấn Độ. Đây cũng là mẫu naked-bike dưới 500 phân khối đầu tiên của hãng xe Đức.</p>			
+                                                <p hidden class="description">Thiết kế yên đơn, có sẵn tay nắm dắt xe. Đuôi xe được vuốt nhọn thể thao. Đặc biệt chiều cao yên có thể tùy chỉnh để phù hợp với chiều cao của người lái.</p>						
+                                                								
+                                                <p class="item-price"><strike>198.000.000</strike> <b>198.000.000₫</b></p>
+                                            </div>		
+                                            <button class="btn btn-primary add-cart" type="button">Add to Cart</button>				
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Ducati Panigale V2.png" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Ducati Panigale V2</h4>
+                                                <p hidden class="description-title">Ducati Panigale V2 White Rosso được sơn phủ toàn thân màu trắng ngọc trai kết hợp tinh tế với những mảng màu đỏ bên trong hốc đèn xe, khe gió tản nhiệt hay hai bên hông xe và bộ vành đúc tạo điểm nhấn.</p>			
+                                                <p hidden class="description">Ducati Panigale V2 sở hữu chiều cao yên ở mức 840 mm, trọng lượng khô 176 kg, sở hữu phuộc trước hành trình ngược 43 mm đến từ Showa BPF. Trong khi đó, giảm xóc sau dạng monoshock có thể điều chỉnh đến từ Sachs. Bình xăng có dung tích 17 lít.</p>						
+                                                									
+                                                <p class="item-price"><strike>619.000.000</strike> <b>599.000.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>
+                                        </div>
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Ducati3.jpg" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>DUCATI SCRAMBLER 110CC</h4>	
+                                                <p hidden class="description-title">Ducati Scrambler 110CC là mẫu xe đang được các tay đua săn lùng bởi thiết kế độc đáo, ấn tượng, động cơ cực khỏe, thách thức mọi địa hình. Không chỉ có vậy, mẫu xe này còn tích hợp nhiều tính năng mới lạ, mang đến trải nghiệm khó cưỡng. Nếu bạn chưa hay đang có nhu cầu tìm hiểu về sản phẩm này, hãy cùng chúng tôi bóc trần nó ngay bây giờ nhé</p>			
+                                                <p hidden class="description"> Được trang bị động cơ lên đến 110CC, Ducati Scrambler khiến người dùng phải bất ngờ với khả năng phục vụ liên tục, kéo ga lên đến 100 km/h. Cùng với đó là bộ làm mát bằng không khí giúp kéo dài tuổi thọ của xe và tiết kiệm nhiên liệu. Hệ thống xử lý khí thải thân thiện với môi trường.</p>								
+                                                <p class="item-price"><strike>28.000.000</strike> <b>22.500.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>
+                                        </div>
+                                    </div>	
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Ducati4.jpg" class="img-fluid" alt=""></a>							
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Ducati 899 Panigale</h4>
+                                                <p hidden class="description-title">Ducati 899 Panigale là mẫu sport-bike tầm trung đang được yêu thích nhất hiện nay, bên cạnh khối động cơ đầy sức mạnh đến từ Ý và một vẻ ngoài thể thao và thời trang với những đường nét thiết kế hoàn hảo trong từng chi tiết. Nay chiếc xe còn trở nên độc đáo hơn rất nhiều khi khoác lên người bộ cánh vàng Chrome đầy nổi bật.</p>
+                                                <p hidden class="description"> Bên cạnh thiết kế Ducati 899 Panigale còn thừa hưởng những trang bị tiên tiến nhất từ 1199 như hệ thống động cơ L-Twin nguyên khối bằng nhôm monocoque gắn liên với hệ thống khung, đi kèm hệ thống điều khiển van biến thiên độc quyền của Ducati mang tên Desmodromic. </p>                                                                                                        
+                                                <p class="item-price"><strike>600.000.000</strike> <b>577.000.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/honda1.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Future 125 FI</h4>
+                                                <p hidden class="description-title">Honda Future 125 FI với thiết kế trẻ trung, lịch lãm và hiện đại được bổ sung màu mới, tạo những điểm nhấn ấn tượng, thu hút mọi ánh nhìn. Cùng với vị thế là mẫu xe số cao cấp hàng đầu phân khúc tại Việt Nam, Future 125 FI cho bạn tự tin thể hiện phong cách, phẩm chất của mình trên mọi hành trình.</p>
+                                               <p hidden class="description"> Honda Future 125 FI với thiết kế trẻ trung, lịch lãm và hiện đại được bổ sung màu mới, tạo những điểm nhấn ấn tượng, thu hút mọi ánh nhìn. Cùng với vị thế là mẫu xe số cao cấp hàng đầu phân khúc tại Việt Nam, Future 125 FI cho bạn tự tin thể hiện phong cách, phẩm chất của mình trên mọi hành trình.</p>
+                                                <p class="item-price"><strike>31.990.000</strike> <b>30.000.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Honda2.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>SH125i/150i</h4>
+                                                <p hidden class="description-title">Kế thừa tinh hoa của dòng xe SH với những đường nét thanh lịch, sang trọng mang hơi thở Châu Âu cùng động cơ cải tiến đột phá và công nghệ tiên tiến, SH125i/150i mới bổ sung màu mới ấn tượng và nổi bật.</p>
+                                                <p hidden class="description"> Dòng xe này cũng được đánh giá cao về khả năng tiết kiệm nhiên liệu. Honda SHi 2022 được trang bị hệ thống phun xăng điện tử (PGM FI)， công nghệ tích hợp bộ đề ѵà ACG. Hệ thống ngắt động cơ tạm thời (Idling Stop), giúp người sử dụng tiết kiệm xăng tối đa </p>                                                									
+                                                <p class="item-price"><strike>71.000.000</strike> <b>70.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>
+                                        </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Suzuki1.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Bandit GSX150</h4>
+                                                <p hidden class="description-title">Dòng xe này cũng được đánh giá cao về khả năng tiết kiệm nhiên liệu. Honda SHi 2022 được trang bị hệ thống phun xăng điện tử (PGM FI)， công nghệ tích hợp bộ đề ѵà ACG. Hệ thống ngắt động cơ tạm thời (Idling Stop), giúp người sử dụng tiết kiệm xăng tối đa. </p>
+                                                <p hidden class="description">BANDIT là dòng xe côn tay thể thao lý tưởng cho tất cả khách hàng sử dụng xe trong mọi điều kiện đường sá cũng như nhu cầu đi lại hàng ngày trong thành phố hoặc cho những chuyến đi du lịch đường dài.</p>                                                 
+                                                <p class="item-price"><strike>68.900.000</strike> <b>67.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Suzuki2.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>GSX-R150</h4>
+                                                <p hidden class="description-title">GSX-S150 là một mẫu xe thể thao đường phố hoàn toàn mới lạ và hấp dẫn. Có khả năng tăng tốc mạnh mẽ và dẫn đầu trong phân khúc 150cc, nhờ kết hợp hài hòa giữa sức mạnh động cơ và trọng lượng thân xe, cùng với mức tiết kiệm tiêu hao nhiên liệu vượt bậc và khả năng điều khiển linh hoạt.</p>
+                                                <p hidden class="description">Động cơ 150cc, 4 thì, làm mát bằng dung dịch, DOHC cho công suất đầu ra mạnh mẽ và khả năng tăng tốc vượt trội cũng như vào số êm ái. Động cơ đã áp dụng thành công trên Raider Fi Thế hệ Mới.</p>                                                                                                									
+                                                <p class="item-price"><strike>71.990,000</strike> <b>70.990.000₫</b></p>                                       
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/honda3.jpg" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>CBR 150 ĐẶC BIỆT</h4>
+                                                <p hidden class="description-title">, Honda CBR150R ABS 2022 vừa được Honda trình làng chính thức với 3 phiên bản màu mới đậm chất thể thao cá tính.</p>
+                                                <p hidden class="description">Honda CBR150R 2022 sở hữu kích thước tổng thể dài x rộng x cao lần lượt là 1.983 x 700 x 1.090 mm, chiều dài cơ sở 1.312 mm, chiều cao yên xe giảm còn 788 mm, trọng lượng tổng thể của xe ở mức 139 kg. Khoảng cách từ yên
+                                                     xe đến vị trí tay lái đã được thiết kế lại giúp người dùng thoải mái hơn khi vận hành xe. Phần tay đòn dài hơn 13 mm so với phiên bản cũ. CBR150R phiên bản ABS được coi là lựa chọn phù hợp cho nhiều người, kể cả những biker không quá cao hay mới bắt đầu chơi.</p>                                               									
+                                                <p class="item-price"><strike>67.755.000</strike> <b>67.700.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/SYM1.jpg" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>STAR SR 125 EFI</h4>
+                                                <p hidden class="description-title">Động cơ 150cc, 4 thì, làm mát bằng dung dịch, DOHC cho công suất đầu ra mạnh mẽ và khả năng tăng tốc vượt trội cũng như vào số êm ái. Động cơ đã áp dụng thành công trên Raider Fi Thế hệ Mới.</p>
+                                                <p hidden class="description">Xe được hãng SYM thiết kế theo phong cách thể thao, cá tính, kiểu dáng hoàn toàn phá cách, mới lạ. Có thể nói Star SR 125 EFI có nhiều tính năng nổi bật như xe tích hợp côn tay chủ động giúp người dùng luôn làm chủ khi lái xe, cho bạn một phong cách riêng biệt.</p>                                                                                                									                                           
+                                                <p class="item-price"><strike>28.700.000</strike> <b>27.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">                   
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/SYM2.jpg" class="img-fluid" alt=""></a>										                                            									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>STAR SR 170</h4>
+                                                <p hidden class="description-title">STAR SR 170.</p>
+                                                <p hidden class="description"> Star SR 170 của SYM hướng đến nhóm khách hàng tiềm năng là những người trẻ, khách hàng phồ thông hứa hẹn sẽ là đối thủ cạnh trạnh trực tiếp với các dòng xe côn tay như Winner 2022, Exciter 150 2022, Raider mới 2022.</p>                                                                                                									                                                                                          									
+                                                <p class="item-price"><strike>52.400.000</strike> <b>50.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/YAMAHA1.jpg" class="img-fluid" alt=""></a>										                        									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Yamaha MT-03</h4>
+                                                <p hidden class="description-title">Yamaha MT-03 là mẫu xe phân khối lớn thuộc dòng Naked Bike của nhà Yamaha. Mẫu xe moto này được trang bị động cơ 4 thì, xi-lanh đôi, 321 phân khối, làm mát bằng dung dịch, công suất 30,9 kW tại 10.750 vòng/phút và mô-men xoắn cực đại 29,6 Nm tại 9.000 vòng/phút, tích hợp phun xăng điện tử.</p>
+                                                <p hidden class="description">MT-03 hướng đến đối tượng đam mê moto phân khối lớn đặc biệt là dòng Naked Bike và sẽ là đối thủ cạnh tranh trực tiếp với kawasaki Z300 hay chiếc Rebel 300 của nhà honda. </p>                                                                                                									                                                                                          									                                               									
+                                                <p class="item-price"><strike>129.000.000</strike> <b>125.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/yamaha2.jpg" class="img-fluid" alt=""></a>										                        									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>YZF-R3</h4>
+                                                <p hidden class="description-title">Yamaha YZF R3 là mẫu xe phân khối lớn được thiết kế dựa trên cảm hứng từ huyền thoại YZR-M1 của giải đua MotoGP danh tiếng.</p>
+                                                <p hidden class="description">Mẫu xe moto này được trang bị động cơ 4 thì, xi-lanh đôi, 321 phân khối, làm mát bằng dung dịch, công suất 30.9 mã lực tại 10.750 vòng/phút và mô-men xoắn cực đại 29,6 Nm tại 9.000 vòng/phút, tích hợp phun xăng điện tử. R3 hướng đến đối tượng trẻ đam mê moto phân khối lớn và sẽ là đối thử cạnh tranh trực tiếp với kawasaki ninja 300 hay như chiếc CBR 250RR của nhà honda. </p>                                                                                                									                                                                                          									                                               									                                                									
+                                                <p class="item-price"><strike>132.000.000</strike> <b>132.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                    
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Yamaha3.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>SYM Attila 50</h4>
+                                                <p hidden class="description-title">Attila 50 là mẫu xe tay ga 50cc của SYM. Mẫu xe này được trang bị động cơ 4 thì, xi-lanh đơn, 49,5 phân khối, làm mát bằng không khí, công suất 2,45 kW tại 8500 vòng/phút và mô-men xoắn cực đại 3,2 Nm tại 6500 vòng/ph</p>
+                                                <p hidden class="description">Attila 50 hướng đến đối tượng nữ với nét đẹp nữ tính mềm mại và không cần bằng lái để diều khiển xe hứa hẹn đây xe là mãu xe đành cho sinh viên nữa hay những người chưa có bằng lái.</p>                                               									
+                                                <p class="item-price"><strike>25.700.000</strike> <b>25.700.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Yamaha4.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>SYM PASSING 50</h4>
+                                                <p hidden class="description-title">PASSING 50  là mẫu xe tay ga 50cc của SYM. Mẫu xe này được trang bị động cơ 4 thì, xi-lanh đơn, 49,5 phân khối, làm mát bằng không khí, công suất 2,45 kW tại 8500 vòng/phút và mô-men xoắn cực đại 3,2 Nm tại 6500 vòng/phút. </p>
+                                                <p hidden class="description">PASSING 50 có thiết kế vuông vức sắc cạnh cá tính hứa hẹn đây xe là mãu xe đành cho sinh viên nữ cá tính hay những bạn nam thích những chiếc xe tay ga nhẹ nhàng và những người chưa có bằng lái.</p>                                               									
+                                                <p class="item-price"><strike>24.200.000</strike> <b>23.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/xe/Yamaha5.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									                              									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Yamaha Exciter 155 VVA</h4>
+                                                <p hidden class="description-title">là mẫu xe có thết kể thể thao hầm hố học tập từ đàn anh Exciter 150 và Yamaha YZF-R1, với dung tích xilanh 155cc. Mẫu xe moto này được trang bị động cơ 4 thì, 1 xi-lanh, làm mát bằng dung dịch, công suất 17.7 mã lực tại 9500 vòng/phút và mô-men xoắn cực đại 14.4 Nm tại 8.000 vòng/phút, tích hợp phun xăng điện tử.</p>
+                                                <p hidden class="description"> Exciter 155 VVA hướng đến đối tượng trẻ tuổi năng động và sẽ là đối thủ cạnh tranh trực tiếp với Winner X của nhà Honda hay Raider của nhà Suzuki .</p>                                               									                                                									
+                                                <p class="item-price"><strike>50.000.000</strike> <b>47.000.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Add to Cart</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center ">
+                              <li class="page-item" data-target="#myCarousel" data-slide="prev">
+                                <a class="page-link" href="#" >
+                                  <span >&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item page-1" data-target="#myCarousel" data-slide-to="0"><a class="page-link pg" href="#">1</a></li>
+                              <li class="page-item page-2" data-target="#myCarousel" data-slide-to="1"><a class="page-link pg" href="#">2</a></li>
+                              <li class="page-item page-3" data-target="#myCarousel" data-slide-to="2"><a class="page-link pg" href="#" >3</a></li>
+                              <li class="page-item" data-target="#myCarousel" data-slide="next">
+                                <a class="page-link" href="#">
+                                  <span>&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                </div>
+                
+            </div>
+            
+            </section>
+            
+            
+        </div>
+        <footer class="mt-5 bg-dark text-white text-center">
+            <div class="container px-4 pt-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5 class="text-uppercase">CẢM ƠN BẠN </h5>
+          
+                  <p style="text-align: justify;">
+                    Đây là một website bán xe, hy vọng khách hàng có những giây phút vui vẻ và thỏa mãn khi mua sắm tại đây!
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="text-uppercase">Liên kết</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                        <a href="../html/index.html" >TRANG CHỦ</a>
+                      </li>
+                      <li>
+                          <a href="../html/ProductDetails.html" >SẢN PHẨM</a>
+                        
+                      </li>
+                      <li>
+                          <a href="../html/hotro.html" >HỖ TRỢ</a>
+                      </li>
+                      <li>
+                          <a href="../html/about_us.html" >VỀ CHÚNG TÔI</a>
+                      </li>
+                    <li class="icon">
+                        <a href="#"><i class="fa fa-facebook-official"></i></a>
+                        <a href="#"> <i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                    <img src="../assets/img/logoSaleNoti.png" height="100px" style="margin-top:20px;">
+                    
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-3" style="background-color: #009933;">
+              © BẢN QUYỀN THUỘC VỀ VANHOA VÀ VIETHUNG
+              
+            </div>
+          </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                        <div class="cart-items"></div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 USD</span>
+                        </div>
+                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+            
+            <script src="../js/ProducttoCart.js"></script>
+            <!-- <script src="../js/ProductToProductDetails.js"></script> -->
+        </div>
+        
+        
+    </div>
+    
+        <!-- <script src="../js/ProducttoCart.js"></script> -->
+
+    </body>
+    </html>
+    
+
+
+    

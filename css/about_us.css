@@ -1,0 +1,33 @@
+.img-box {
+    width: 100%;
+    height: 500px;
+    background: url("../assets/img/blog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    
+
+}
+.thumb-wrapper{
+    background: transparent !important;
+    border: 0px !important;
+    color:#fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+.img-round{
+    margin-top: 20%;
+    /* transform: translateY(-50%); */
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50% !important;
+}
+.carousel{
+    z-index: 2;
+}
